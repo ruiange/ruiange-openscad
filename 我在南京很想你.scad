@@ -82,7 +82,7 @@ union() {
         // 拼音文字
         translate([0, -22, depth])
         linear_extrude(text_height)
-        text(pinyin_text, size=6, halign="center", font=english_font);
+        text(pinyin_text, size=6, spacing=1.1, halign="center", font=english_font);
         
         // N标记
         translate([-width/2+15, height/2-54, depth])
