@@ -1,5 +1,4 @@
 
-
 // 文字内容
 chinese_text = "我在南京很想你"; 
 // 拼音内容
@@ -9,6 +8,17 @@ pinyin_text = "WO ZAI NAN JING HEN XIANG NI";
 chinese_font = "Noto Sans SC:style=Black";
 // 拼音字体  
 english_font = "Inter Tight:style=SemiBold";  
+
+
+
+// N
+N = "N"; 
+// S
+S = "S";  
+// 南字
+nan = "南";
+// 北字
+bei = "北";  
 
 
 
@@ -69,12 +79,12 @@ union() {
         // 北标记
         translate([-width/2+15, height/2-15, depth])
         linear_extrude(text_height)
-        text("北", size=6, halign="center", font=chinese_font);
+        text(bei, size=6, halign="center", font=chinese_font);
         
         // 南标记
         translate([width/2-15, height/2-15, depth])
         linear_extrude(text_height)
-        text("南", size=6, halign="center", font=chinese_font);
+        text(nan, size=6, halign="center", font=chinese_font);
     }
     
     // 黑色文字
@@ -87,11 +97,11 @@ union() {
         // N标记
         translate([-width/2+15, height/2-54, depth])
         linear_extrude(text_height)
-        text("N", size=7, halign="center", font=english_font);
+        text(N, size=7, halign="center", font=english_font);
         
         // S标记
         translate([width/2-15, height/2-54, depth])
         linear_extrude(text_height)
-        text("S", size=7, halign="center", font=english_font);
+        text(S, size=7, halign="center", font=english_font);
     }
 }
