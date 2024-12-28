@@ -29,7 +29,7 @@ english_text_size = 2;        // 英文字体大小
 english_text_x = -39;         // 英文X位置
 english_text_y = -34.5;         // 英文Y位置 (-44.5 + 10)
 number_text_size = 12;        // 编号字体大小
-number_text_x = 2;           // 编号X位置
+number_text_x = 2;           // 编��X位置
 number_text_y = -35;         // 编号Y位置 (-45 + 10)
 
 // 圆形标志参数
